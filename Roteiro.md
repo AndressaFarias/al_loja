@@ -54,7 +54,18 @@
 
     Para que o código seja executado
 
+- Usar o bootstrap via CDN  para página
 
+- Criar uma `struct` que define _produto_
+    ~~~go
+    type Produto struct {
+	Nome, Descricao string
+	Preco           float32
+	Quantidade      int
+    }
+    ~~~
+- dentro da função `index`instanciar os produtos que desejados com um `slice`
 
+- Passar o _slice_ para a função `temp.ExecuteTemplate`
 
-- 
+- Enviar á página de HTML para receber os novos produtos
